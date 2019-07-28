@@ -230,10 +230,12 @@ nav ul li a {
 }
 
 .border {
-    width: 40%; /* antes 180 */
+    width: 40%;
+    /* antes 180 */
     height: 4px;
     background: #4CC49B;
-    margin:  30px auto; /* 60 */
+    margin: 30px auto;
+    /* 60 */
 }
 
 .gallery-section .gallery {
@@ -274,4 +276,13 @@ nav ul li a {
     .gallery-section .image {
         flex: 100%;
     }
+}
+
+.gallery-section p {
+    text-align: center;
+    color: #01954C;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
