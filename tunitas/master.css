@@ -280,7 +280,7 @@ nav ul li a {
 
 .gallery-section p {
     text-align: center;
-    color: #01954C;
+    color: whitesmoke; /*#01954C */
     font-family: 'Questrial', sans-serif;
     font-size: 20px;
     line-height: 1.5;
