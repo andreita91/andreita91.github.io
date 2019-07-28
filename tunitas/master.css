@@ -286,3 +286,7 @@ nav ul li a {
     line-height: 1.5;
     letter-spacing: 1px;
 }
+
+.gallery-section b {
+    color: #4CC49B;
+}
