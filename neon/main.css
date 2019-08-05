@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    padding: 100px;
+    padding: 150px;
     background-color: black;
 	
 }
@@ -10,9 +10,9 @@ body {
 .text {
     font-family: 'Schoolbell', cursive;
     font-size: 40px;
-    color: navajowhite;
+    color: whitesmoke;
     text-align: center;
-    line-height: 85px;
+    line-height: 65px;
     letter-spacing: 5px;
     position: relative;
     top: 50%;
