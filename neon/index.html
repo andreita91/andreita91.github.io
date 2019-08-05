@@ -12,24 +12,22 @@
 
 <body>
     <!-- hamburger -->
-    <div id="nav-container">
-  <div class="toggle-icon">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
+    
+
+<div class="nav-toggle">
+    
 </div>
 
 
-        <div class="text">Home</div>
+      <!--  <div class="text">Home</div>
         <div class="text">Tour</div>
         <div class="text">Music</div>
         <div class="text">Video</div>
-        <div class="text">Contact</div>
+        <div class="text">Contact</div>-->
         
-        $(".toggle-icon").click(function() {
-  $('#nav-container').toggleClass("pushed");
-});
+     <script>$('.nav-toggle').click(function() {
+		$(this).toggleClass('active');
+	});</script>   
 
 </body>
 

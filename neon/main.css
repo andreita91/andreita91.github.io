@@ -1,9 +1,8 @@
 body {
     margin: 0px;
-    padding: 100px;
+    padding: 0px;
     background-color: black;
-	background:#222;
-	font-size: 10px;
+	
 }
 
 
@@ -28,88 +27,60 @@ body {
 
 /*hamburger*/
 
-#nav-container{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin:-3em;
+.nav-toggle {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  z-index: 999999;
+  padding: 10px 35px 16px 0;
+  cursor: pointer
 }
 
-/*toggle-icon*/
-.toggle-icon {
-	display: block;
-	position: relative;
-	width: 100%;
-	margin: -2.2em auto 0 0.2em;
-	-webkit-transition: margin 600ms;
-	-moz-transition: margin 600ms;
-	transition: margin 600ms;
-	cursor: pointer;
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 3px;
+  border-radius: 1px;
+  border-color:white;
+  background: #fff;
+  cursor: pointer;
 }
 
-.toggle-icon .bar {
-	display: block;
-	width: 3.8em;
-	height: 0.2em;
-	margin: 0.9em;
-	border-right: 2.8em solid #fff;
-	border-left: 0.6em solid #d6d6d6;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
-	-moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
-	transition-property: transform, margin, border-right-color, box-shadow;
-	-webkit-transition-duration: 600ms;
-	-moz-transition-duration: 600ms;
-	transition-duration: 600ms;
-}
-	.toggle-icon .bar:nth-of-type(1) {
-		-webkit-transition: opacity 300ms;
-		-moz-transition: opacity 300ms;
-		transition: opacity 300ms;
-	}
-	.toggle-icon .bar:nth-of-type(2) {
-		-webkit-transform: rotate(-180deg);
-		-moz-transform: rotate(-180deg);
-		-ms-transform: rotate(-180deg);
-		-o-transform: rotate(-180deg);
-		transform: rotate(-180deg);
-	}
-
-/*pushed*/
-.pushed .toggle-icon {
-	margin: -3.2em 0 0 0.7em;
+.nav-toggle span:before {
+  top: -10px;
 }
 
-	.pushed .bar:nth-of-type(1) {
-		opacity: 0;
-	}
-
-	.pushed .bar:nth-of-type(2) {
-		margin-left: 1.4em;
-		-webkit-transform: rotate(-137deg) translateY(-1.5em);
-		-moz-transform: rotate(-137deg) translateY(-1.5em);
-		-ms-transform: rotate(-137deg) translateY(-1.5em);
-		-o-transform: rotate(-137deg) translateY(-1.5em);
-		transform: rotate(-137deg) translateY(-1.5em);
-	}
-
-	.pushed .bar:nth-of-type(3) {
-		margin-left: 0.5em;
-		-webkit-transform: rotate(-42deg);
-		-moz-transform: rotate(-42deg);
-		-ms-transform: rotate(-42deg);
-		-o-transform: rotate(-42deg);
-		transform: rotate(-42deg);
-	}
-
-
-.pushed .toggle-icon:hover .bar:nth-of-type(2) {
-	border-right-color: #e9b8b9;
-	box-shadow: 0.4em 0 0.6em 0.1em rgba(205,40,44,0.75);
+.nav-toggle span:after {
+  bottom: -10px;
 }
-.pushed .toggle-icon:hover .bar:nth-of-type(3) {
-	border-right-color: #ddf1da;
-	box-shadow: 0.4em 0 0.6em 0.1em rgba(83,228,68,0.65);
+
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+  transition: all 300ms ease-in-out;
 }
+
+.nav-toggle.active span {
+  background-color: transparent
+}
+
+.nav-toggle.active span:before,
+.nav-toggle.active span:after {
+  top: 0;
+}
+
+.nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+.nav-toggle.active span:after {
+  top: 10px;
+  transform: translatey(-10px)   rotate(-45deg);
+}
+
+/*cosas*/
+
