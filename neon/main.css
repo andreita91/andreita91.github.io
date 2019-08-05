@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    padding: 0px;
+    padding: 100px;
     background-color: black;
 	
 }
@@ -9,7 +9,7 @@ body {
 
 .text {
     font-family: 'Schoolbell', cursive;
-    font-size: 70px;
+    font-size: 40px;
     color: navajowhite;
     text-align: center;
     line-height: 85px;
@@ -27,60 +27,5 @@ body {
 
 /*hamburger*/
 
-.nav-toggle {
-  position: absolute;
-  top: 30px;
-  right: 15px;
-  z-index: 999999;
-  padding: 10px 35px 16px 0;
-  cursor: pointer
-}
 
-.nav-toggle span,
-.nav-toggle span:before,
-.nav-toggle span:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 35px;
-  height: 3px;
-  border-radius: 1px;
-  border-color:white;
-  background: #fff;
-  cursor: pointer;
-}
-
-.nav-toggle span:before {
-  top: -10px;
-}
-
-.nav-toggle span:after {
-  bottom: -10px;
-}
-
-.nav-toggle span,
-.nav-toggle span:before,
-.nav-toggle span:after {
-  transition: all 300ms ease-in-out;
-}
-
-.nav-toggle.active span {
-  background-color: transparent
-}
-
-.nav-toggle.active span:before,
-.nav-toggle.active span:after {
-  top: 0;
-}
-
-.nav-toggle.active span:before {
-  transform: rotate(45deg);
-}
-
-.nav-toggle.active span:after {
-  top: 10px;
-  transform: translatey(-10px)   rotate(-45deg);
-}
-
-/*cosas*/
 
