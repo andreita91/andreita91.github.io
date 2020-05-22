@@ -34,19 +34,19 @@ img {
 }
 
 .text-1 {
-    top: 160px;
+    top: 100px;
     left: -90px;
 }
 
 .text-2 {
     z-index: 1;
-    top: 280px;
+    top: 170px;
     left: 280px;
 }
 
 .three {
     z-index: 2;
-    top: -720px;
+    top: -725px;
     width: 120%;
 }
 
@@ -56,8 +56,8 @@ img {
 
 .text-3 {
     z-index: 1;
-    top: -140px;
-    left: -180px;
+    top: -10px;
+    left: -430px;
 }
 
 .text-4 {
